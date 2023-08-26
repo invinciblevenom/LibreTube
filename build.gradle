@@ -28,22 +28,8 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-  allprojects {
-		repositories {
-			...
+allprojects {
+	repositories {
 			maven { url 'https://jitpack.io' }
 		}
-	}
-
-//For Gradle 7.0 and above add 'maven { url 'https://jitpack.io' }' in settings.gradle file
-
-
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
 }
-
