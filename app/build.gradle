@@ -127,6 +127,9 @@ dependencies {
     /* Room */
     ksp libs.room.compiler
     implementation libs.room
+
+    /* Bitscuit */
+    implementation 'com.github.arpitmx:bitscuit:1.0.6'
 }
 
 static def getUnixTime() {
